@@ -1,0 +1,170 @@
+/* CSS */
+body {
+	color: #88847f;
+	font-size: 18px;
+	line-height: 1.44; /*26 ÷ 18*/
+	font-family: 'sofia-pro', sans-serif;
+}
+
+#mainheader h1 a{
+	background: url(img/logo-hardgraft.png) no-repeat;
+	width: 77px;
+	height: 50px;
+	display: block;
+	/* remplacement d'image */
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#banner h2 {
+	font-size: 48px;
+	line-height: 1.2;
+	/* 1.2 * 48 */
+	font-family: 'Playfair Display', serif;
+	color: #2d2825;
+	font-weight: normal;
+}
+#quote h2{
+	display: none;
+}
+#quote blockquote{
+	font-size: 30px;
+	line-height: 1.2;/*36*/
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	color: #2e2926; /* fallback */
+	/* opacity: .8; 80% */
+	color: rgba(46,41,38,.8);
+	text-align: center;
+	font-weight: normal;
+}
+#mainproduct h2, #incarnation h2{
+	font-size: 48px;
+	line-height: 1.2;
+	font-family: 'Playfair Display', serif;
+	color: #2e2926;
+	text-align: center;
+	font-weight: normal;
+}
+#mainproduct h3 a{
+	font-size: 24px;
+	line-height: 1.2;
+	color: #2e2926; 
+	/* font-weight:bold; */
+}
+/* todo: changer taille h3 des petits produits */
+
+
+#incarnation h3{
+	font-size: 30px;
+	line-height: 1.2;
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+	font-weight: normal;
+	color: #2d2825;
+}
+#mainfooter h2{
+	font-size: 12px;
+	color: #fff;
+	/*font-weight: bold;*/
+	text-transform: uppercase;
+	line-height: 1.2;
+	/*font-family: 'sofia-pro', sans-serif;*/
+}
+
+/* lien */
+
+a{
+	text-decoration: none;	
+}
+#banner a{
+	font-size: 12px;
+	color: #2D2825;
+	font-weight: bold;
+	text-transform: uppercase;
+	/* dotted - dashed - groove - double */
+	/*border-style: solid;
+	border-width: 1px;
+	border-color: #000;*/
+
+	border-bottom:1px solid #000;
+}
+#banner a:before{
+	content: "> ";
+}
+#banner a:visited{
+	border-color: #BADA55;
+}
+#banner a:hover, #banner a:focus{
+	color: red;
+	outline: 0;
+}
+#banner a:active{
+	/**/
+}
+/* LoVe HAte */
+
+.btn{
+	font-size: 12px;
+	color: #2D2825;
+	font-weight: bold;
+	text-transform: uppercase;
+	border:1px solid #2D2825;
+	border-radius: 5px;
+	/* le chemin vers l'image depuis le css */
+	background-image: url(img/seeallarrow.png);
+	background-repeat: no-repeat;
+	background-position: 20px center;
+	padding: 20px 20px 19px 48px;
+}
+
+/* styles section */
+
+#banner{
+	background:url(img/iphonecase-big.png) no-repeat right center,
+			   url(img/bg-banner.png) #DEDBD8;
+}
+#mainproduct{
+	background:url(img/bg-glass.png) no-repeat left top,
+			   url(img/bg-bag.png) no-repeat right bottom #FAF8F6;
+}
+#incarnation{
+	background:url(img/bg-glass2.png) no-repeat left bottom,
+			   url(img/bg-men.png) no-repeat right top;
+}
+#designers{
+	background:url(img/icon-designer.png) no-repeat center top;
+	padding-top: 85px;
+}
+#details{
+	background:url(img/icon-details.png) no-repeat center top;
+	padding-top: 85px;
+}
+#craft{
+	background:url(img/icon-leather.png) no-repeat center top;
+	padding-top: 85px;
+}
+#mainfooter{
+	background:url(img/bg-footer.png) no-repeat 70% bottom #363433;
+}
+#credit{
+	background-color: #1a1817;
+	background-color: rgba(26,24,23,.4);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
