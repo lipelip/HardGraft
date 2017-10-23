@@ -148,3 +148,46 @@ a{
 	background-color: #1A1817;
 	background-color: rgba(26,24,23,.4);
 }
+
+/* LAYOUT */
+
+.container{
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+.logo{
+	position: absolute;
+	/* top right bottom left */
+	top: 0;
+	left: 0;
+	/* par rapport à la fenetre */
+	/* un element parent comme point de reference */
+	/* donner une position relative au parent */
+}
+.nav{
+	float: right;
+}
+.section--banner{
+	clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
