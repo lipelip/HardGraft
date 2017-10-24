@@ -6,7 +6,9 @@ body {
 	font-family: 'sofia-pro', sans-serif;
 }
 
-#mainheader h1 a{
+/* Title */
+
+.logo a{
 	background: url(img/logo-hardgraft.png) no-repeat;
 	width: 77px;
 	height: 50px;
@@ -16,141 +18,149 @@ body {
 	white-space: nowrap;
 	overflow: hidden;
 }
-
-#banner h2 {
+.title{
+	font-family: 'Playfair Display', serif;
 	font-size: 48px;
 	line-height: 1.2;
-	/* 1.2 * 48 */
-	font-family: 'Playfair Display', serif;
 	color: #2d2825;
 	font-weight: normal;
+	/* todo border */
 }
-#quote h2{
-	display: none;
+.title--section{
+	text-align: center;
+	/* todo border */
 }
-#quote blockquote{
+.title--small{
 	font-size: 30px;
-	line-height: 1.2;/*36*/
-	font-family: 'Playfair Display', serif;
+	text-align: center;
+}
+.title--quote{
+	font-size: 30px;
 	font-style: italic;
-	color: #2e2926; /* fallback */
-	/* opacity: .8; 80% */
+	color: #2e2926;
 	color: rgba(46,41,38,.8);
 	text-align: center;
-	font-weight: normal;
 }
-#mainproduct h2, #incarnation h2{
-	font-size: 48px;
-	line-height: 1.2;
-	font-family: 'Playfair Display', serif;
-	color: #2e2926;
-	text-align: center;
-	font-weight: normal;
-}
-#mainproduct h3 a{
+.titlesans{
+	font-family: 'sofia-pro', sans-serif;
 	font-size: 24px;
 	line-height: 1.2;
 	color: #2e2926; 
-	/* font-weight:bold; */
 }
-/* todo: changer taille h3 des petits produits */
-
-
-#incarnation h3{
-	font-size: 30px;
-	line-height: 1.2;
-	font-family: 'Playfair Display', serif;
-	text-align: center;
-	font-weight: normal;
-	color: #2d2825;
+.titlesans--small{
+	font-size: 18px;
 }
-#mainfooter h2{
+.titlesans--footer{
 	font-size: 12px;
 	color: #fff;
-	/*font-weight: bold;*/
 	text-transform: uppercase;
-	line-height: 1.2;
-	/*font-family: 'sofia-pro', sans-serif;*/
 }
+
+
+/* divers */
+.hide{
+	display: none;
+}
+
+#banner h2 {}
+#quote h2{}
+#quote blockquote{}
+#mainproduct h2, #incarnation h2{}
+#mainproduct h3 a{}
+
+#incarnation h3{}
+#mainfooter h2{}
 
 /* lien */
 
 a{
-	text-decoration: none;	
+	text-decoration: none;
+	color: inherit;	
 }
-#banner a{
+
+.link {
 	font-size: 12px;
-	color: #2D2825;
+	color: #2d2825;
 	font-weight: bold;
 	text-transform: uppercase;
-	/* dotted - dashed - groove - double */
-	/*border-style: solid;
-	border-width: 1px;
-	border-color: #000;*/
+	/*text-decoration: none;*/
+}
+.link--arrow {
+	border-bottom: 1px solid #2d2825;
+	padding: 8px 0;
+}
+.link--arrow:before { content: "> ";}
 
-	border-bottom:1px solid #000;
-}
-#banner a:before{
-	content: "> ";
-}
-#banner a:visited{
-	border-color: #BADA55;
-}
-#banner a:hover, #banner a:focus{
-	color: red;
-	outline: 0;
-}
-#banner a:active{
-	/**/
-}
-/* LoVe HAte */
-
-.btn{
-	font-size: 12px;
-	color: #2D2825;
-	font-weight: bold;
-	text-transform: uppercase;
-	border:1px solid #2D2825;
+.link--more {
+	border: 1px solid #2d2825;
 	border-radius: 5px;
-	/* le chemin vers l'image depuis le css */
+	padding: 19px 20px 20px 48px;
 	background-image: url(img/seeallarrow.png);
 	background-repeat: no-repeat;
 	background-position: 20px center;
-	padding: 20px 20px 19px 48px;
 }
+
+
+#banner a{}
+#banner a:before{}
+
+.link:visited{
+	border-color: #BADA55;
+}
+.link:hover, .link:focus{
+	color: red;
+	outline: 0;
+}
+.link:active{
+	/**/
+}
+
+.btn{}
 
 /* styles section */
 
-#banner{
+
+.section{}
+.section--banner{
 	background:url(img/iphonecase-big.png) no-repeat right center,
 			   url(img/bg-banner.png) #DEDBD8;
 }
-#mainproduct{
+.section--product{
 	background:url(img/bg-glass.png) no-repeat left top,
 			   url(img/bg-bag.png) no-repeat right bottom #FAF8F6;
 }
-#incarnation{
+.section--incarnation{
 	background:url(img/bg-glass2.png) no-repeat left bottom,
 			   url(img/bg-men.png) no-repeat right top;
 }
-#designers{
+.incarnation {
 	background:url(img/icon-designer.png) no-repeat center top;
 	padding-top: 85px;
 }
-#details{
-	background:url(img/icon-details.png) no-repeat center top;
-	padding-top: 85px;
+.incarnation--details{
+	background-image:url(img/icon-details.png);
 }
-#craft{
-	background:url(img/icon-leather.png) no-repeat center top;
-	padding-top: 85px;
+.incarnation--craft{
+	background-image:url(img/icon-leather.png);
 }
-#mainfooter{
+.section--footer{
 	background:url(img/bg-footer.png) no-repeat 70% bottom #363433;
 }
-#credit{
+
+
+
+.credit{
 	background-color: #1a1817;
 	background-color: rgba(26,24,23,.4);
+}
+
+/* LAYOUT */
+
+.logo{
+	position: absolute;/* par rapport à la fenetre */
+	/* top, right, left ou bottom */
+	top: 200px;
+	right: 0;
 }
 
 
