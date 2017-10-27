@@ -156,17 +156,66 @@ a{
 
 /* LAYOUT */
 
+.container{
+	width: 1200px;
+	/*margin-left: auto;
+	margin-right: auto;*/
+	margin: 0 auto;
+
+	position: relative;
+}
+
 .logo{
 	position: absolute;/* par rapport à la fenetre */
 	/* top, right, left ou bottom */
-	top: 200px;
-	right: 0;
+	top: 0;
+	left: 0;
+	/* un point de reference */
+	/* un parent (ou un ancetre) SI position relative */
 }
 
+.nav{
+	float: right;
+}
+.section--banner{
+	clear: both;
+}
 
+/* Navigation */
 
+/* 1 */
+.nav{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+/* 2 */
+.nav__el{
+	float: left;
+	margin-left: 40px;
+}
+/* 3 */
+.nav__el a{
+	display: inline-block;
 
+	/*height: 100px;
+	line-height: 100px;*/
 
+	padding: 35px 0;
+
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #2d2825;
+
+	background: url(img/bg-nav.png) repeat-x left 65px;
+}
+.nav__el--shop a{
+	background: red;
+	/* todo */
+}
+.nav__el a:hover,.nav__el a:focus{}
+/*.nav__el a:active{}*/
 
 
 
