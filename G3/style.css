@@ -1,166 +1,395 @@
-/* CSS */
-body { 
-	color: #88847f;
-	font-family: "sofia-pro",sans-serif;
-	font-size: 18px;
-	line-height: 1.44;
+body{ 
+    color: #E88847; 
+    font-family: “sofia-pro” ,sans-serif;
+    font-size: 18px; 
+    line-height: 1.44; /* taille de la police divisé par l’interlignage */ 
 
-	margin: 0; /* 8px */
+    margin: 0; /* 8px */
 }
 
-#mainheader h1 a{
-	background:url(img/logo-hardgraft.png) no-repeat;
-	width: 77px;
-	height: 50px;
-	display: block;
-	/* remplacement d'image */
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
+.logo a{ /* Menu de navigation */
+    background: url(img/logo-hardgraft.png) no-repeat;
+    width: 77px;
+    height: 50px;
+    display: block; 
+    /* Remplacement d’image */
+    text-indent: 100%; /* permet de mettre le texte au bout de la page */
+    white-space: nowrap;
+    overflow: hidden; 
 }
 
-#banner h2{
-	font-family: 'Playfair Display', serif;
-	font-size: 48px;
-	color: #2d2825;
-	font-weight: normal;
-	line-height: 1.2;
-}
-#banner p{}
-
-
-#quote h2{
-	display: none;
-}
-#quote blockquote{
-	font-family: 'Playfair Display', serif;
-	font-style: italic;
-	font-size: 30px;
-	line-height: 1.2; /* 36 ÷ 30 */
-	color: #2E2926;
-	color: rgba(46,41,38, .8);
-	text-align: center;
-	/* opacity: .8; 80% */
+.logo--big a{ /* Si besoins de le mettre plus grand */
+    width: 150px;
 }
 
-#mainproduct h2, #incarnation h2{
-	font-family: 'Playfair Display', serif;
-	font-size: 48px;
-	color: #2E2926;
-	line-height: 1.2;
-	text-align: center;
+.title{ /* Classe de base avec les principales options qui se répetent */ 
+    font-family: ‘Playfair Display’, serif;
+    font-size: 48px;
+    color: #2d2825 ;
+    font-weight: normal;
+    line-height: 1.2; 
 }
 
-#mainproduct h3 a{
-	font-size: 24px;
-	color: #2E2926;
-	line-height: 1.2;
-	text-decoration: none;
-	/* font-weight: bold; */
-}
-#mainproduct h3 .small{
-	font-size: 18px;
+.title--section{ /* Options différentes en fonction des titres */ 
+    text-align: center;
 }
 
-#incarnation h3{
-	font-family: 'Playfair Display', serif;
-	font-size: 30px;
-	color: #2d2825;
-	line-height: 1.2;
-	text-align: center;
+.title--small{
+    font-size: 30px;
+    text-align: center; 
 }
 
-#mainfooter h2{
-	font-size: 12px;
-	color: #fff;
-	/*font-weight: bold;*/
+.title--quote{
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;
+    color: #2e2926 ;
+    color: rgba(46,41,38, .8); /* opacity : .8 = 80% */ 
+
+}
+
+.titlesans{ /* Sans pour sans-sérif*/
+    font-family: “sofia-pro” ,sans-serif;
+    font-size: 24px; 
+    color: #2e2926 ;
+    line-height: 1.2; 
+}
+
+.titlesans--small{
+    font-size: 18px;
+}
+.titlesans--footer{
+    font-size: 12px; 
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+#banner p {}
+
+.hide{
+    display: none;
+}
+
+.link {
+font-size: 12px;
+color: #2d2825 ;
+font-weight: bold;
+text-transform: uppercase;
+text-decoration: none;
+}
+
+.link--arrow {
+border-bottom: 1px solid #2d2825 ;
+padding: 8px 0;
+}
+
+.link--arrow:before { content: “> “;}
+
+.link--more {
+border: 1px solid #2d2825 ;
+border-radius: 5px;
+padding: 19px 20px 20px 48px;
+background-image: url(img/seeallarrow.png);
+background-repeat: no-repeat;
+background-position: 20px center;
+}
+
+a {
+    text-decoration: none; 
+    color: inherit; /* Ne pas hériter de la couleur qu’on lui donne */
+}
+
+#banner a{}
+
+#banner a:before{}
+
+/* LoVe HAte */ 
+
+.link:visited{
+    border-color: red;
+}
+.link:hover, .link:focus{ 
+    color: #BADA55 ;
+    outline: 0; /* Supprime le halo bleu de chrome */ 
+}
+
+.link:active{ /* En général jamais utilisé */ 
+    color: yellow;
+}
+
+.btn{}
+
+/* Style des sections */
+
+
+.section{}
+
+
+.section--banner{
+    background: url(img/iphonecase-big.png) no-repeat right center,
+                url(img/bg-banner.png) #DEDBD8 ; 
+}
+
+.section--product{
+    background: url(img/bg-glass.png) no-repeat left top, 
+                url(img/bg-bag.png) no-repeat right bottom #FAF8F6 ;
+}
+
+.section--incarnation{
+    background: url(img/bg-glass2.png) no-repeat left bottom,
+                url(img/bg-men.png) no-repeat right top;
+}
+
+.incarnation{ 
+    background: url(img/icon-designer.png) no-repeat center top;
+    padding-top: 85px; /* Pour pousser le texte vers le bas */ 
+}
+
+.incarnation--details{
+    background-image: url(img/icon-details.png);
+}
+
+.incarnation--craft{
+    background-image: url(img/icon-leather.png);
+}
+
+.section--footer{
+    background: url(img/bg-footer.png) #363433 no-repeat 70% bottom;
+}
+
+.credit{
+    background-color: #1A1817 ; /* au cas où le navigateur ne prend pas en charge le rgba */ 
+    background-color: rgba(26,24,23,.4); /* .4 = opacité (canal alpha) */ 
+}
+
+/* Layout */ 
+
+.logo{
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* LIENS */ 
+
+.link {
+font-size: 12px;
+color: #2d2825 ;
+font-weight: bold;
+text-transform: uppercase;
+text-decoration: none;
+}
+
+.link--arrow {
+border-bottom: 1px solid #2d2825 ;
+padding: 8px 0;
+}
+
+.link--arrow:before { content: “> “;}
+
+.link--more {
+border: 1px solid #2d2825 ;
+border-radius: 5px;
+padding: 19px 20px 20px 48px;
+background-image: url(img/seeallarrow.png);
+background-repeat: no-repeat;
+background-position: 20px center;
+}
+
+a {
+    text-decoration: none; 
+    color: inherit; /* Ne pas hériter de la couleur qu’on lui donne */
+}
+
+#banner a{}
+
+#banner a:before{}
+
+/* LoVe HAte */ 
+
+.link:visited{
+    border-color: red;
+}
+.link:hover, .link:focus{ 
+    color: #BADA55 ;
+    outline: 0; /* Supprime le halo bleu de chrome */ 
+}
+
+.link:active{ /* En général jamais utilisé */ 
+    color: yellow;
+}
+
+.btn{}
+
+/* Style des sections */
+
+
+.section{}
+
+
+.section--banner{
+    background: url(img/iphonecase-big.png) no-repeat right center,
+                url(img/bg-banner.png) #DEDBD8 ; 
+}
+
+.section--product{
+    background: url(img/bg-glass.png) no-repeat left top, 
+                url(img/bg-bag.png) no-repeat right bottom #FAF8F6 ;
+}
+
+.section--incarnation{
+    background: url(img/bg-glass2.png) no-repeat left bottom,
+                url(img/bg-men.png) no-repeat right top;
+}
+
+.incarnation{ 
+    background: url(img/icon-designer.png) no-repeat center top;
+    padding-top: 85px; /* Pour pousser le texte vers le bas */ 
+}
+
+.incarnation--details{
+    background-image: url(img/icon-details.png);
+}
+
+.incarnation--craft{
+    background-image: url(img/icon-leather.png);
+}
+
+.section--footer{
+    background: url(img/bg-footer.png) #363433 no-repeat 70% bottom;
+}
+
+.credit{
+    background-color: #1A1817 ; /* au cas où le navigateur ne prend pas en charge le rgba */ 
+    background-color: rgba(26,24,23,.4); /* .4 = opacité (canal alpha) */ 
+}
+
+/* Layout */ 
+
+.logo{
+    
+}
+
+
+[1:55] 
+.section{}
+
+
+.section--banner{
+    background: url(img/iphonecase-big.png) no-repeat right center,
+                url(img/bg-banner.png) #DEDBD8 ; 
+}
+
+.section--product{
+    background: url(img/bg-glass.png) no-repeat left top, 
+                url(img/bg-bag.png) no-repeat right bottom #FAF8F6 ;
+}
+
+.section--incarnation{
+    background: url(img/bg-glass2.png) no-repeat left bottom,
+                url(img/bg-men.png) no-repeat right top;
+}
+
+.incarnation{ 
+    background: url(img/icon-designer.png) no-repeat center top;
+    padding-top: 85px; /* Pour pousser le texte vers le bas */ 
+}
+
+.incarnation--details{
+    background-image: url(img/icon-details.png);
+}
+
+.incarnation--craft{
+    background-image: url(img/icon-leather.png);
+}
+
+.section--footer{
+    background: url(img/bg-footer.png) #363433 no-repeat 70% bottom;
+}
+
+.credit{
+    background-color: #1A1817 ; /* au cas où le navigateur ne prend pas en charge le rgba */ 
+    background-color: rgba(26,24,23,.4); /* .4 = opacité (canal alpha) */ 
+}
+
+
+/* Layout */
+
+.container{
+	width: 1200px;
+	/*margin-left: auto;
+	margin-right: auto;*/
+
+	margin: 0 auto;
+
+	position: relative;
+}
+
+.logo{
+	position: absolute;
+	/* top right bottom left */
+	top: 0;
+	left: 0;
+	/* absolute se place par rapport à la fenetre  */
+	/* pour le positionner par rapport à un parent */
+	/* utiliser le parent comme point de reference */
+	/* utiliser une position relative sur le parent ou un des parents */
+}
+
+.nav{
+	float: right;
+}
+
+
+
+
+.section--banner{
+	clear: both;
+}
+
+
+/* Navigation */
+/* 1 */
+.nav{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+/* 2 */
+.nav__el{
+	float: left;
+	margin-left: 40px;
+}
+/* 3 */
+.nav__el a{
+	display: inline-block;
+
+	height: 80px;
+	line-height: 80px;
+
+	font-size: 14px;
 	text-transform: uppercase;
-	line-height: 1.2;
-}
-
-/* LIENS */
-
-#banner a{
-	font-size: 12px;
 	color: #2d2825;
 	font-weight: bold;
-	text-transform: uppercase;
-	text-decoration: none;
-	/* dotted, dashed, groove, etc. */
-	/*border-style: solid; 
-	border-width: 1px;
-	border-color: #000;*/
-	border-bottom:1px solid #000;
-	/**/
-}
-#banner a:before{
-	content: "> ";
-}
-/* LoVe HAte */
-#banner a:visited{
-	border-color: red;
-}
-#banner a:hover, #banner a:focus{
-	color: #BADA55;
-	outline: 0;
-}
-#banner a:active{
-	color: yellow;	
-}
 
+	background: red url(img/bg-nav.png) repeat-x left 60px;
+}
+.nav__el a:hover,.nav__el a:focus{}
 
-
-
-.btn{
-	font-size: 12px;
-	color: #2d2825;
-	font-weight: bold;
-	text-transform: uppercase;
-	text-decoration: none;
-	border:1px solid #2d2825;
-	border-radius: 5px;
-	/* le chemin du css vers l'image */
-	background-image: url(img/seeallarrow.png);
-	background-repeat: no-repeat;
-	background-position: 20px center;
-	padding: 20px 20px 19px 48px;
+.nav__el--shop a{
+	/*todo*/
 }
-
-/* style des sections */
-#banner{
-	background:url(img/iphonecase-big.png) no-repeat right center,
-			   url(img/bg-banner.png) #DEDBD8;
-}
-#mainproduct{
-	background:url(img/bg-glass.png) no-repeat left top,
-			   url(img/bg-bag.png) no-repeat right bottom #FAF8F6;
-}
-#incarnation{
-	background:url(img/bg-glass2.png) no-repeat left bottom,
-			   url(img/bg-men.png) no-repeat right top;
-}
-
-#designers{
-	background:url(img/icon-designer.png) no-repeat center top;
-	padding-top: 85px;
-}
-#details{
-	background:url(img/icon-details.png) no-repeat center top;
-	padding-top: 85px;
-}
-#craft{
-	background:url(img/icon-leather.png) no-repeat center top;
-	padding-top: 85px;
-}
-
-#mainfooter{
-	background:url(img/bg-footer.png) #363433 no-repeat 70% bottom;
-}
-#credit{
-	background-color: #1A1817;
-	background-color: rgba(26,24,23,.4);
-}
-
 
 
 
