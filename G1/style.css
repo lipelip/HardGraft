@@ -153,8 +153,9 @@ a{
 
 .container{
 	width: 1200px;
-	margin-left: auto;
-	margin-right: auto;
+	/*margin-left: auto;
+	margin-right: auto;*/
+	margin: 0 auto;
 	position: relative;
 }
 
@@ -174,10 +175,43 @@ a{
 	clear: both;
 }
 
+/* NAVIGATION */
 
+.nav{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav__el{
+	float: left;
+	margin-left: 40px;
+}
+.nav__el a{
+	display: inline-block;
 
+	/*
+	DWM
+	height: 100px;
+	line-height: 100px;
+	*/
+	padding: 35px 0;
 
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #2d2825;
+	/*text-decoration: none;*/
 
+	background: url(img/bg-nav.png) repeat-x left 60px;
+}
+.nav__el--shop a{
+	background: red;
+	/* todo ajouter le style */
+}
+
+/* .nav__el a:visited{} pas dans la <nav> */
+.nav__el a:hover, .nav__el a:focus{}
+.nav__el a:active{}
 
 
 
