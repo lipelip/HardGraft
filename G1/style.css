@@ -27,6 +27,22 @@ body {
 	line-height: 1.2;
 	color: #2d2825;
 }
+.title--banner{
+	/* bg--nav */
+	position: relative;
+	margin-bottom: 50px;
+}
+	.title--banner:after{
+		content: "";
+		display: block;
+		width: 40px;
+		height: 2px;
+		background: url(img/bg-nav.png) repeat-x;
+		position: absolute;
+		left: 0;
+		bottom: -25px;
+	}
+
 .title--section{
 	text-align: center;
 	/* todo ajouter le bord */
@@ -173,6 +189,7 @@ a{
 }
 .section--banner{
 	clear: both;
+	padding: 160px 0 177px;
 }
 
 /* NAVIGATION */
@@ -212,6 +229,89 @@ a{
 /* .nav__el a:visited{} pas dans la <nav> */
 .nav__el a:hover, .nav__el a:focus{}
 .nav__el a:active{}
+
+
+.col--big{
+	width: 580px;
+}
+
+.title--quote{
+	width: 500px;
+	margin:0 auto;
+	position: relative;
+}
+	.title--quote:after{
+		content: "“";
+		font-size: 80px;
+		color: #eae9e9;
+		position: absolute;
+		left: -30px;
+		top: -30px;
+	}
+	.title--quote:before{
+		content: "”";
+		font-size: 80px;
+		color: #eae9e9;
+		position: absolute;
+		right: 30px;
+		top: 30px;
+	}
+
+.products{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.products__el{
+	float: left;
+	width: 374px;
+	margin:0 39px 40px 0;
+}
+
+.products__el:first-child{}
+.products__el:last-child{
+	
+}
+.products__el:nth-child(3n+2){
+	margin-right: 0;
+}
+/* 
+n = 0,1,2,3,4,etc.
+3n+2 = 2,5,8,11,14
+ */
+.products__el--big{
+	width: 580px;
+}
+
+.products__info{
+	background: #fff;
+	padding: 29px 30px 33px 32px;
+}
+.products__img{
+	display: block;
+	/* changer les images! */
+	max-width: 100%;
+}
+
+
+
+.clear{
+	clear: both;
+}
+
+/* technique clearfix pour les floats */
+/* ajouter sur le parent */
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+
+
+
+
 
 
 
