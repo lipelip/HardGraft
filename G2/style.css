@@ -26,6 +26,23 @@ body {
 	font-weight: normal;
 	/* todo border */
 }
+.title--banner{
+	/**/
+	position: relative;
+	margin-bottom: 48px;
+}
+.title--banner:after{
+	content: "";
+	display: block;
+	width: 40px;
+	height: 2px;
+	background: url(img/bg-nav.png) repeat-x;
+	position: absolute;
+	left: 0;
+	bottom: -25px;
+}
+
+
 .title--section{
 	text-align: center;
 	/* todo border */
@@ -40,7 +57,31 @@ body {
 	color: #2e2926;
 	color: rgba(46,41,38,.8);
 	text-align: center;
+
+	width: 500px;
+	margin:0 auto;
+
+	position: relative;
 }
+	.title--quote:before{
+		content: "“";
+		font-size: 80px;
+		color: #eae9e9;
+
+		position: absolute;
+		left: -30px;
+		top: -30px;
+	}
+	.title--quote:after{
+		content: "”";
+		font-size: 80px;
+		color: #eae9e9;
+
+		position: absolute;
+		right: 30px;
+		top: 30px;
+	}
+
 .titlesans{
 	font-family: 'sofia-pro', sans-serif;
 	font-size: 24px;
@@ -179,7 +220,14 @@ a{
 }
 .section--banner{
 	clear: both;
+	height: 260px;
+	padding: 160px 0 177px;
 }
+	.container--banner{
+		padding-right: 620px;
+		/* le padding s'ajoute à la width */
+		width: 580px;
+	}
 
 /* Navigation */
 
@@ -216,6 +264,66 @@ a{
 }
 .nav__el a:hover,.nav__el a:focus{}
 /*.nav__el a:active{}*/
+
+
+.section--quote{
+	background: #fff;/* Why ? */
+	padding: 10px 0;
+}
+
+
+.products{
+	list-style: none;
+	margin:0;
+	padding: 0;
+}
+.products__el{
+	float: left;
+	width: 374px;
+	margin:0 39px 40px 0;
+}
+
+.products__el:nth-child(3n-1){
+	margin-right: 0;
+	background: red;
+}
+/* n = 0,1,2,3,4,5 */
+
+/* 3n-1 = 2,5,8,11 */
+
+
+
+.products__el--big{
+	width: 580px;
+}
+.products__info{
+	background: #fff;
+	padding: 29px 30px 33px 32px;
+}
+.products__img{
+	display: block;
+	/**/
+	max-width: 100%;
+}
+
+
+
+
+/* technique du clearfix pour les float */
+/* ajouter la classe sur le parent */
+.clearfix:after{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+
+
+
+
+
+
+
 
 
 
